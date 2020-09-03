@@ -1,0 +1,401 @@
+/*Add google font*/
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster+Two|Patua+One|Rubik|Sniglet&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+:root {
+  --Snigle-font: "Sniglet", curslve;
+  --Rubik: "Rubik", curslve;
+  --Patua: "Patua One", curslve;
+  --Lobster: "Lobster", curslve;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom,
+      #dd2476,
+      #ff512f --light-gray: rgba(255, 255, 255, 0));
+}
+
+header a {
+  font-family: var(--Snigle-font);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+header {
+  background: #dd2476;
+  background: var(--bggradient);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+header .nav-item {
+  padding: 0.9em;
+}
+
+header .navbar-brand {
+  padding-left: 8rem;
+}
+
+header .nav-link:hover {
+  color: black;
+}
+
+header .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding: bottom 35vmin;
+  font-family: var(--Rubik);
+  color: white;
+}
+
+header .row .col-md-5 img {
+  width: 90%;
+}
+
+header .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+  font-size: 8vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+
+header .container .col-md-7 button {
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+/* section 1*/
+.section-1 {
+  padding: 20vmin 0vmin;
+}
+
+.section-1 .row .col-md-6 .pray img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+  position: absolute;
+  top: 7vmin;
+  left: -18;
+  background: white;
+  border-radius: 3px;
+  text-align: left;
+  padding: 13vmin 5vmin 20vmin 5vmin;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  font-family: var(--Rubik);
+  z-index: 7;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0.4em 0;
+}
+
+.section-1 .row .col-md-6 .panel p {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0.5);
+}
+
+.cover {
+  width: 100%;
+  height: 55vmin;
+  background: url(/images/bulit.jpg);
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+  background-color: rgba(0, 2, 0.9);
+}
+
+.cover .content {
+  background: rgba(71, 70, 70, 0.7);
+  height: 100%;
+  width: 100%;
+  padding-top: 19vmin;
+}
+
+.cover .content>h1 {
+  font-family: var(--Patua);
+  font-size: 6vmin;
+  color: whitesmoke;
+}
+
+.cover .content>p {
+  font-family: var(--Rubik);
+  font-size: 2vmin;
+  color: #e5e5e5;
+}
+
+.numbers .react {
+  padding-top: 3.5vmin;
+  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+  height: 17rem;
+  width: 12rem;
+  margin: 2rem;
+  position: relative;
+  border-radius: 5em;
+  z-index: 1;
+  background: white;
+}
+
+.numbers {
+  margin-top: -17vmin;
+}
+
+.numbers .react h1 {
+  font-size: 5rem;
+  color: tomato;
+}
+
+.numbers .react p {
+  font-family: var(--Patua);
+}
+
+.purchase>h1 {
+  font-family: var(--Lobster);
+  padding-top: 15vmin;
+  padding-bottom: 0.1vmin;
+}
+
+.purchase>p {
+  font-size: 3vmin;
+  padding-bottom: 10vmin;
+  color: var(--light-black);
+}
+
+.card-title {
+  background: lightblue;
+  padding: 1rem 2.5rem;
+  font-size: 2vmin;
+}
+
+.card .card-text {
+  padding: 2rem 5rem;
+  color: var(--light-black);
+}
+
+.card-body .pricing {
+  background: rgba(209, 241, 241, 0.1);
+  border-top-right-radius: 170px;
+  border-top-left-radius: 170px;
+}
+
+.card-body h5,
+p {
+  text-align: center;
+}
+
+.card-body .pricing h1 {
+  text-align: center;
+}
+
+.section-3 {
+  height: 70vmin;
+  margin-top: 15vmin;
+  background-color: lightsalmon;
+}
+
+.section-3 .col-md-12 h1 {
+  padding-top: 5vmin;
+  color: whitesmoke;
+  font-size: 6vmin;
+}
+
+.section-3 .col-md-12 p {
+  padding: 4em;
+  padding-bottom: 2em;
+  color: lightgray;
+  font-size: 3vmin;
+}
+
+.section-3 .desktop {
+  background: white;
+  display: inline-block;
+  border-radius: 3em;
+  padding: 2vmin 4.5vmin;
+  margin: 1em;
+}
+
+.section-4 .container h1 {
+  font-size: 6vmin;
+  padding-top: 14vmin;
+}
+
+.section-4 .team {
+  padding: 10vmin 4vmin;
+}
+
+.section-4 .card {
+  width: 22rem;
+  margin-top: 10vmin;
+}
+
+.section-4 .card .card-text {
+  padding: 0.5em;
+}
+
+.section-4 .card .card-body a {
+  font-size: 1.5em;
+}
+
+.section-4 .carousel-item {
+  padding-left: 3vmin;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
+
+footer {
+  background-color: darkslategrey;
+  text-align: center;
+}
+
+form{
+  align:center;
+}
+.mt-5, .my-5 {
+    margin-top: 8rem!important;
+}
+.text-muted {
+    color: #6c757d!important;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.parallax-effect {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#home {
+    height: 100%;
+}
+#home-cover {
+    height: 100%;
+    background-image: url(../images/building3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#home-heading {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 55px;
+    margin: 2px 40px 0 50px;
+
+}
+
+a.btn.btn-outline-info {
+    border-radius: 40px;
+    padding: 10px 10px 10px 10px;
+    border-color: #fff;
+    color: #fff;
+}
+
+/* services section */
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-box-title {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 2px;
+    background-color: green;
+    margin: 20px auto 30px auto;
+}
+
+.service-item {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-item-icon i {
+    color: #34c6d3;
+    float: left;
+    padding: 16px;
+}
+
+.col-md-4:hover .service-item-icon i {
+    color: #fff;
+    background-color: #34c6d3;
+}
+
+.service-item-title h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+}
+
+.service-item-desc {
+    margin: 0;
+    padding-left: 50px;
+}

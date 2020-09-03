@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container mt-5 main">
+       <h4 class="text-muted text-center mb-20">Hotel Management System List</h4>
+       <a href="{% url 'AddCustomer' %}" type="button" class="btn btn-primary btn-md btn-block">Add Customers</a>
+       <a href="{% url 'add_customer_report' %}" type="button" class="btn btn-secondary btn-md btn-block">Customer Reports</a>
+       <a href="{% url 'add_room' %}" type="button" class="btn btn-primary btn-md btn-block">Add Rooms</a>
+       <a href="{% url 'add_room_report' %}" type="button" class="btn btn-secondary btn-md btn-block">Room Reports</a>
+       <a href="{% url 'add_room_booking' %}" type="button" class="btn btn-primary btn-md btn-block">Room Bookings</a>
+       <a href="{% url 'add_room_booking_report' %}" type="button" class="btn btn-secondary btn-md btn-block">Booking Reports</a>
+       <a href="{% url 'add_loundry' %}" type="button" class="btn btn-primary btn-md btn-block">Cancel Bookings</a>
+       <a href="{% url 'add_room_billing' %}" type="button" class="btn btn-secondary btn-md btn-block">Room Billings</a>
+       <a href="{% url 'room_billing_report' %}" type="button" class="btn btn-primary btn-md btn-block">Room Billing Reports</a>
+       <a href="{% url 'add_cleaning' %}" type="button" class="btn btn-secondary btn-md btn-block">Room Cleaning Requests</a>
+       <a href="{% url 'add_cleaning_report' %}" type="button" class="btn btn-primary btn-md btn-block">Room Cleaning Reports</a>
+       <a href="{% url 'add_loundry' %}" type="button" class="btn btn-secondary btn-md btn-block">Room Laundry Requests</a>
+       <a href="{% url 'add_loundry_report' %}" type="button" class="btn btn-primary btn-md btn-block">Room Laundry Reports</a>
+
+</div>
+{% endblock %}

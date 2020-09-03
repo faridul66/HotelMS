@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+  <div class="text-center">
+      <h4 class="text-muted">Add-Room-Booking</h4>
+    </div>
+   <form class="contact-form" method="post" action="{% url 'add_room_booking_submission' %}">
+     {% csrf_token %}
+     <div class="form-group">
+       <label for="first">Name</label>
+       <input
+         type="text"
+         class="form-control"
+         id="first"
+         name="name"
+         placeholder="Name"
+       />
+     </div>
+     <div class="form-group">
+       <label for="sur">Room-Number</label>
+       <input
+         type="text"
+         class="form-control"
+         name="r_number"
+         id="sur"
+         placeholder="Room-Number"
+       />
+     </div>
+     <div class="form-group">
+       <label for="last">Phone</label>
+       <input
+         type="tel"
+         class="form-control"
+         name="phone"
+         id="last"
+         placeholder="Phone"
+       />
+     </div>
+         <div class="form-group">
+           <label for="phone">From-Date</label>
+           <input
+             type="date"
+             class="form-control"
+             name="from_date"
+             id="phone"
+             placeholder="MM-DD-YYYY"
+           />
+     </div>
+       <div class="form-group">
+         <label for="phone2">To-Date</label>
+         <input
+           type="date"
+           class="form-control"
+           name="to_date"
+           id="phone2"
+           placeholder="MM-DD-YYYY"
+         />
+   </div>
+       <div class="form-group">
+         <label for="phone">Total-Amount</label>
+         <input
+           type="text"
+           class="form-control"
+           name="amount"
+           id="phone3"
+           placeholder="Total-Amount"
+         />
+       <div class="form-group">
+         <label for="phone">Description</label>
+         <input
+           type="text"
+           class="form-control"
+           name="description"
+           id="phone1"
+           placeholder="Description"
+         />
+       </div>
+     <button class="btn btn-outline-info" type="submit">Submit</button>
+   </form>
+</div>
+
+
+{% endblock %}

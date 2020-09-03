@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <table class="table table-striped">
+        <tr class="text-center">
+            <th>Room-Number</th>
+            <th>Date</th>
+            <th>Total-cost</th>
+            <th>Room-Description</th>
+
+
+        </tr>
+        {% for shows in show %}
+
+        <tr class="text-center">
+
+
+            <td>{{ shows.r_number }}</td>
+            <td>{{ shows.date }}</td>
+            <td>{{ shows.r_cost }}</td>
+            <td>{{ shows.r_description }}</td>
+
+
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
