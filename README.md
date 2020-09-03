@@ -1,2 +1,2 @@
 # HotelMS
-Hotel
+Hotel Software development
